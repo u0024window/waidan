@@ -1,0 +1,23 @@
+{
+    "error": {
+        "returnCode": "0",
+        "returnMessage": "ok",
+        "returnUserMessage": "成功"
+    },
+    "data":{
+        "closeCount":{
+            "total": "3", 
+            "allowClose": "2"
+        },
+        "reasonList": [
+            {
+                "reasonCode": "QT",      //原因编码，"QT"为其它
+                "reasonName": "其它"      //原因
+            },
+            {
+                "reasonCode": "QT1",      //原因编码，"QT"为其它
+                "reasonName": "案件状态不对"      //原因
+            }
+        ]
+    }
+}

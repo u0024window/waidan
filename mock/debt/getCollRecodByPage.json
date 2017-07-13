@@ -1,0 +1,21 @@
+{
+    "error": {
+        "returnCode": "0",
+        "returnMessage": "操作成功！",
+        "returnUserMessage": "操作成功！"
+    },
+    "data": {
+        "total": 100, //总记录数
+        "list":[
+            {
+                createTime: 1479394283704,
+                collResultStandard: "催收记录",
+                remark:"备注",
+                familyProperty:"家庭情况及财产调查",
+                repayAmount: 100,
+                repayTime: 1479394283704,
+                collector: "催收员1"
+            }
+        ]
+    }
+}

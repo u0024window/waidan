@@ -1,0 +1,85 @@
+{
+  "error": {
+    "returnCode": "0",
+    "returnMessage": "操作成功！",
+    "returnUserMessage": "操作成功！"
+  },
+  "data": {
+    "enterpriseInfo": {
+      "enterpriseId": "123",           //公司id
+      "enterpriseName": "人人行",    //公司名称
+      "contact": "王一",             //联系人
+      "briefName": "简称",
+      "enBrief": "英文简称",
+      "contactMobile": "18100000000",  //联系电话
+      "debtTotalNum": 100,          //委托案件总量
+      "debtCurrentNum": 20,         //当前委托案件量
+      "debtTotalAmount": 110000,    //委托案件总额, 单位分
+      "debtCurrentAmount": 30000,     //当前委托案件金额，单位分
+      "debtLastCreateDate": 1410000000000,   //最近委托案件时间，时间戳、毫秒
+      "debtLastUpdateDate": 1410000000000,    //最近案件更新时间，时间戳、毫秒
+      "overdueRewardInfo": '[{"start":"1","rewardRate":"5","end":"10"}]'
+    },
+    "refundHistory": {
+        "list":[
+            {
+                "refundDate": 1410000000000,     //结算日期，时间戳、毫秒
+                "refundAmount": 100,             //结算金额, 单位分  
+                "refundType": 0,                 //结算方式
+                "linkDebtNum": 20,            //关联案件数
+                "resAmount": 1000                //结余, 单位分
+            },
+            {
+                "refundDate": 1410000000000,     //结算日期，时间戳、毫秒
+                "refundAmount": 100,             //结算金额, 单位分  
+                "refundType": 0,                 //结算方式
+                "linkDebtNum": 20,            //关联案件数
+                "resAmount": 1000                //结余, 单位分
+            }
+        ],
+        "total":{
+            "refundAmount":100 
+        }
+    },
+    "debtUploadList": [
+      {
+        "fileName": "xxx",               //文件名
+        "uploadTime": 1410000000000,     //上传时间，时间戳、毫秒
+        "delegateDate": 1410000000000,   //委托期限，时间戳、毫秒
+        "delegateAmount": 100,           //委托金额, 单位分
+        "uploadId": "12"                //下载链接
+      },
+      {
+        "fileName": "xxx",
+        "uploadTime": 1410000000000,
+        "delegateDate": 1410000000000,
+        "delegateAmount": 100,
+        "uploadId": "12"                //下载链接
+      }
+    ],
+    "debtUpdateList": [
+      {
+        "fileName": "xxx",                //文件名
+        "uploadTime": 1410000000000,      //上传时间，时间戳、毫秒
+        "uploadId": "12"                //下载链接
+      },
+      {
+        "fileName": "xxx",
+        "uploadTime": 1410000000000,
+        "uploadId": "12"                //下载链接
+      }
+    ],
+    "commissionList": [
+      {
+        "fileName": "xxx",                 //文件名
+        "uploadTime": 1410000000000,       //上传时间，时间戳、毫秒
+        "uploadId": "12"                //下载链接
+      },
+      {
+        "fileName": "xxx",
+        "uploadTime": 1410000000000,
+        "uploadId": "12"                //下载链接
+      }
+    ]
+  }
+}

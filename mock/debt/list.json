@@ -1,0 +1,47 @@
+{
+  "error": {
+    "returnCode": "0",
+    "returnMessage": "操作成功！",
+    "returnUserMessage": "操作成功！"
+  },
+  "data": {
+    "list": [
+      {
+        "debtId":"1",         //案件编号
+        "debtStatus": 1,               //案件状态
+        "debtSettleStatus": 0,         //结算状态
+        "debtName": "张三",            //债务人姓名
+        "debtMobile": 100,             //债务人手机号
+        "debtIdentityId": "xxxxxxxx",  //债务人身份证号
+        "debtAmount": 1000,            //债务总金额，单位分
+        "overdueDays":20,              //逾期天数
+        "overdueAmount":500,           //逾期金额
+        "refundAmount":500,            //实还金额
+        "repayCommission":100,         //已结佣金
+        "unpayCommission":100,         //未结佣金
+        "importStatus": 10,
+        "collectorCommission":50,      //已付催客佣金
+        "debtAmountUpdateTime":1420000000000,        //债务金额更新时间,毫秒
+        "entrustEnterprise":"xxxx"        //委托方
+      },
+      {
+        "debtId":"4",         //案件编号
+        "debtStatus": 0,               //案件状态
+        "debtSettleStatus": 0,         //结算状态
+        "debtName": "张三",            //债务人姓名
+        "debtMobile": 100,             //债务人手机号
+        "debtIdentityId": "xxxxxxxx",  //债务人身份证号
+        "debtAmount": 1000,            //债务总金额，单位分
+        "overdueDays":20,              //逾期天数
+        "overdueAmount":500,           //逾期金额
+        "refundAmount":500,            //实还金额
+        "repayCommission":100,         //已结佣金
+        "unpayCommission":100,         //未结佣金
+        "collectorCommission":50,      //已付催客佣金
+        "debtAmountUpdateTime":1420000000000,        //债务金额更新时间,毫秒
+        "entrustEnterprise":"xxxx"        //委托方
+      }
+    ],
+    "total": 100                        //总条数
+  }
+}

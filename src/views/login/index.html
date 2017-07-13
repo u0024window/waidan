@@ -1,0 +1,27 @@
+<%-contentFor('main') %>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-CN" lang="zh-CN">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta name="generator" content="gvim" />
+<meta name="author" content="" />
+<link rel="icon" href="favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<title>登录</title>
+{{ for (var css in htmlWebpackPlugin.files.css) { }}
+<link href="{{= htmlWebpackPlugin.files.css[css] }}" rel="stylesheet">
+{{ } }}
+</head>
+<body>
+<div class="default-common-head">
+    <div class="bg"></div>
+    <div class="logo">借贷委托案件管理系统<span class="user"></span></div>
+</div>
+<div id="login"><%-reactOutput%></div>
+{{ for (var chunk in htmlWebpackPlugin.files.chunks) { }}
+<script src="{{= htmlWebpackPlugin.files.chunks[chunk].entry }}"></script>
+{{ } }} 
+</body>
+</html>

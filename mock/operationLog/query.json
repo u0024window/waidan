@@ -1,0 +1,20 @@
+{
+    "error": {
+       "returnCode": "0",
+       "returnMessage": "ok",
+       "returnUserMessage": "成功"
+    },
+    "data": {
+        list:[
+            {
+                "updateTime": "1479883672764",
+                "remark": "remark",
+                "operateTypeName": "operateType",
+                "bDescription": "bDescription",
+                "aDescription": "aDescription",
+                "operatorName": "operator"
+            }
+        ],
+        "total":101
+    }
+}

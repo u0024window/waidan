@@ -1,0 +1,31 @@
+{
+    "error": {
+        "returnCode": "0",
+        "returnMessage": "操作成功！",
+        "returnUserMessage": "操作成功！"
+    },
+    "data":[
+        {
+            "operateTime": 1480579354901,
+            "preStatus":0,   //案件状态(操作前)(0-待分案，1-征集中，2-催收中，3-锁定，4-完成，5-暂停)
+            "operate": "操作",      //操作
+            "operateReason": "操作原因",   //操作原因
+            "sufStatus":0,    //案件状态(操作后)(0-待分案，1-征集中，2-催收中，3-锁定，4-完成，5-暂停)
+            "settleStatus": 0, //结算状态（0-未结算，1-已结算，2-无需结算）
+            "operator": "操作员",     //操作员
+            "operateType": 1,
+            "remark": "备注"        //备注
+        }
+        ,{
+            "operateTime": 1480579354901,
+            "preStatus":0,   //案件状态(操作前)(0-待分案，1-征集中，2-催收中，3-锁定，4-完成，5-暂停)
+            "operate": "操作",      //操作
+            "operateReason": "操作原因",   //操作原因
+            "sufStatus":0,    //案件状态(操作后)(0-待分案，1-征集中，2-催收中，3-锁定，4-完成，5-暂停)
+            "operateType": 1,
+            "settleStatus": 0, //结算状态（0-未结算，1-已结算，2-无需结算）
+            "operator": "操作员",     //操作员
+            "remark": "备注"        //备注
+        }
+    ]
+}

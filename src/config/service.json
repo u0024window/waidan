@@ -1,0 +1,8 @@
+{
+     "service_domain": "http://100.73.17.53:8080",
+    "service_token": "93d26698415bb7d203aadf254c589d71",
+    "redis_host": "127.0.0.1",
+    "redis_port": "6379",
+    "redis_prefix": "outdebt_session",
+    "redis_default_expire": "1800"
+}

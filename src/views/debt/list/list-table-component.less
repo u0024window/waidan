@@ -1,0 +1,53 @@
+.list-table-wrap {
+    .table {
+        max-width: none;
+    }
+    .table > thead > tr > th {
+        width: 140px;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    .table > tbody > tr > td {
+        text-align: center;
+        vertical-align: middle;
+        height: 40px;
+        overflow: hidden;
+    }
+
+}
+.scroll-table {
+    overflow-x: scroll;
+    width: 100%;
+}
+::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 4px;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, .1);
+    -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, .5);
+}
+.mask-table {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+
+    .check-box, .op-col {
+        pointer-events: auto;
+    }
+    .table-striped > tbody > tr {
+        background: none;
+    }
+}
+.mask-table table thead tr th,
+.mask-table table tbody tr td {
+    background: #fff;
+}
+.mask-table table thead tr th:nth-child(2),
+.mask-table table tbody tr td:nth-child(2) {
+    border-right: 1px solid rgba(0,0,0,0);
+}

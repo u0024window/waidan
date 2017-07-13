@@ -1,0 +1,17 @@
+{
+    "error": {
+       "returnCode": "0",
+       "returnMessage": "ok",
+       "returnUserMessage": "成功"
+    },
+    "data": [
+        {
+            "enterpriseId":12312,      //公司id
+            "enterpriseName":"123123"     //公司名称
+        },
+        {
+            "enterpriseId":123123,      //公司id
+            "enterpriseName":"412211111111111111111111111116"     //公司名称
+        }
+    ]
+}

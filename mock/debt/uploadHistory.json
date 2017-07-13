@@ -1,0 +1,33 @@
+{
+    "error": {
+        "returnCode": "0",
+        "returnMessage": "操作成功！",
+        "returnUserMessage": "操作成功！"
+    },
+    "data": {
+        "debtUploadList": [
+            {
+                "uploadId": "111",                    //上传记录id
+                "fileName": "xxx",                    //文件名
+                "uploadTime": 1410000000000,          //上传时间，时间戳、毫秒
+                "entrustDate": "2016-10-12至2017-01-01", //委托期限
+                "entrustAmount": 100,                 //委托金额, 单位分
+                "downloadUrl": "url"                     //下载链接
+            }
+        ],
+        "debtUpdateList": [
+            {
+                "uploadId": "111",                //上传记录id
+                "fileName": "xxx",                //文件名
+                "uploadTime": 1410000000000,      //上传时间，时间戳、毫秒
+            }
+        ],
+        "commissionList": [
+            {
+                "uploadId": "111",                 //上传记录id
+                "fileName": "xxx",                 //文件名
+                "uploadTime": 1410000000000,       //上传时间，时间戳、毫秒
+            }
+        ]
+    }
+}

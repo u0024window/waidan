@@ -1,0 +1,15 @@
+<%- contentFor('head') %>
+<title>欢迎使用借贷委托案件管理系统</title>
+
+<%- contentFor('main') %>
+<h1>欢迎使用借贷委托案件管理系统</h1>
+
+<%- contentFor('style') %>
+{{ for (var css in htmlWebpackPlugin.files.css) { }}
+<link href="{{= htmlWebpackPlugin.files.css[css] }}" rel="stylesheet">
+{{ } }}
+<%- contentFor('script') %>
+{{ for (var chunk in htmlWebpackPlugin.files.chunks) { }}
+<script src="{{= htmlWebpackPlugin.files.chunks[chunk].entry }}"></script>
+{{ } }} 
+

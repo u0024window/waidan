@@ -1,0 +1,104 @@
+{
+    "error": {
+        "returnCode": "0",
+        "returnMessage": "操作成功！",
+        "returnUserMessage": "操作成功！"
+    },
+    "data": {
+        "addressError": true,
+        "contactError": true,
+        "suspectedRepeat":[
+            {
+                "debtContract":"3333333",
+                "debtId":"12321321"
+            },
+            {
+                "debtContract":"44444",
+                "debtId":"232323"
+            }
+        ],
+        "debtInfo": {                 //【案件信息】
+            "debtId": "案件id",                  //案件id
+            "debtContract": "借款合同编号",            //借款合同编号
+            "debtType": "案件类型",                //案件类型
+            "entrustEnterprise": "委托方名称",       //委托方名称
+            "entrustBeginDate": 1476944787881,        //委托开始日期,时间戳:毫秒
+            "entrustEndDate": 1476944787881,          //委托结束日期,时间戳:毫秒
+            "updateTime": 1476944787881,              //债务更新时间,时间戳:毫秒
+            "debtStatus": 3,               //当前状态
+            "settleStatus": 1,               //结算状态
+            "overdueDays": 1,              //逾期天数
+            "rewardRate": '50%',               //奖金比率
+            "roundRrcRefundAmount": 1,
+            "refundWay": "50%",                //还款方式
+            "refundAccount": "500123123123123123",             //还款账户
+            "overdueRewardInfo": '[{"commissionRate": 50, "start":"1","rewardRate":"5","end":"10"}]'
+        },
+        "debtorInfo": {               // 【债务人信息】
+            "debtorName": "债务人",             //债务人
+            "debtorPhone": "手机号",            //手机号
+            "debtorSn": "身份证号",               //身份证号
+            "debtorAccount": "银行卡号",           //银行卡号
+            "snProvince":2 ,           //户籍地址省
+            "snCity":2,               //户籍地址市
+            "debtorSnRegionId":2 ,           //户籍地址区
+            "debtorSnAddress":"户籍地址",       //户籍地址
+            "usualProvince":3 ,        //居住地址省
+            "usualCity":3 ,            //居住地址市
+            "debtorUsualAddressId":3 ,        //居住地址区
+            "debtorUsualAddress": "居住地址",     //居住地址
+            "companyProvince": 4,      //工作地址省
+            "companyCity": 4,          //工作地址市
+            "debtorCompanyAddressId":4 ,      //工作地址区
+            "debtorCompanyAddress":"工作地址",   //工作地址
+            "ecProvince":5,           //电商地址省
+            "ecCity": "",               //电商地址市
+            "debtorEcAddressId": "",           //电商地址区
+            "debtorEcAddress": "电商地址",        //电商地址
+            contactList:[
+                {             //联系人列表
+                    contactName: "联系人",          //联系人
+                    contactMobile: "电话",         //电话
+                    relation: "1",              //关系
+                    contactAddress: "地址"        //地址
+                },
+                {             //联系人列表
+                    contactName: "联系人",          //联系人
+                    contactMobile: "电话",         //电话
+                    relation: "2",              //关系
+                    contactAddress: "地址"        //地址
+                }
+            ]
+        },
+        "debtRefundList": {
+            "total": {
+                "refundAmount": 123123
+            },
+            "list": [{          //【债务人实还金额】
+                "refundId":123123,               //还款记录id
+                "refundDate": 1476948623153,             //还款日期,时间戳:毫秒
+                "refundAmount":123123,           //还款金额,单位:分
+                "refundStatus":0,       //佣金结算状态,0-未支付，1-已支付，2-已失效
+                "operator":"操作人",               //操作人
+                "operateTime": 1476948623153,           //操作时间,时间戳:毫秒
+                "operateType":0           //操作类型,0:手工操作
+            }]
+        },
+        "debtSettleList": {
+            "total": {
+                "settleAmount":123123,           //清算金额,单位:分
+                "commissionAmount":123123       //实收佣金,单位:分
+            },
+            "list":[{      //【委托方结款金额】
+                "settleId":123123,               //清算记录id
+                "settleDate":1476944787881,             //清算日期,时间戳:毫秒
+                "settleAmount":123123,           //清算金额,单位:分
+                "commissionAmount":123123,       //实收佣金,单位:分
+                "settleStatus":1,       //佣金结算状态,0-未结算，1-已结算，2-已失效
+                "operator":"操作人",               //操作人
+                "operateTime":1476944787881,           //操作时间,时间戳:毫秒
+                "operateType":0           //操作类型,0:手工操作
+            }]
+        }
+    }
+}

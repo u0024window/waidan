@@ -1,0 +1,85 @@
+<%
+    var menuList = [
+        {
+            title: '案件管理',
+            list: [
+                {
+                    url:'/debt/list',
+                    name: '案件列表'
+                },
+                {
+                    url:'/debt/upload',
+                    name: '上传案件'
+                }
+            ]
+        },
+        {
+            title: '公司管理',
+            list: [
+                {
+                    url:'/company',
+                    name: '公司列表'
+                }
+            ]
+        },
+        {
+            title: '平台管理',
+            list: [
+                {
+                    url:'/platform/rateconf',
+                    name: '费率设置'
+                }
+            ]
+        }
+    ]
+%>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-CN" lang="zh-CN">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+<%-defineContent('style')%>
+<%-defineContent('head')%>
+</head>
+<body>
+<div class="default-top-wrap">
+    <div class="default-common-head">
+        <div class="logo">借贷委托案件管理系统
+            <a class="logout" href="/logout">退出登录</a>
+            <span class="user"><%-typeof common === 'object' ? common.userName: ''%></span>
+        </div>
+    </div>
+    <div class="default-main-wrap">
+        <div class="default-left-side">
+            <nav class="sidebar">
+                <ul class="menu-list">
+                    <%
+                        menuList.forEach(function (item) {
+                    %>
+                        <li>
+                            <div class="menu-list-title"><%-item.title%></div>
+                            <ul class="menu-list-child">
+                        <%
+                            item.list.forEach(function (itemChilds) {
+                        %>
+                                <li><a href="<%-itemChilds.url%>"><%-itemChilds.name %></a></li>
+                        <%
+                            })
+                        %>
+                            </ul>
+                        </li>
+                    <%})%>
+                </ul>
+            </nav>
+        </div>
+        <div class="default-main">
+            <%-defineContent('main')%>
+        </div>
+    </div>
+</div>
+<%-defineContent('script')%>
+</body>
+</html>
+

@@ -1,0 +1,21 @@
+<%- contentFor('head') %>
+<title>案件列表</title>
+<%-headDataOutput%>
+
+<%- contentFor('main') %>
+<div class="content">
+    <div id="navOutput"><%-navOutput%></div>
+    <div id="queryOutput"><%-queryOutput%></div>
+    <div id="listOutput"><%-listOutput%></div>
+    <div id="pagerOutput"><%-pagerOutput%></div>
+    <div id="operationOutput"><%-operationOutput%></div>
+</div>
+
+<%- contentFor('style') %>
+{{ for (var css in htmlWebpackPlugin.files.css) { }}
+<link href="{{= htmlWebpackPlugin.files.css[css] }}" rel="stylesheet">
+{{ } }}
+<%- contentFor('script') %>
+{{ for (var chunk in htmlWebpackPlugin.files.chunks) { }}
+<script src="{{= htmlWebpackPlugin.files.chunks[chunk].entry }}"></script>
+{{ } }} 

@@ -1,0 +1,31 @@
+
+{
+    "error": {
+        "returnCode": "0",
+        "returnMessage": "操作成功！",
+        "returnUserMessage": "操作成功！"
+    },
+    "data": [
+        {
+            "name": "地区1",      //名称
+            "code": 1     //编码
+        },
+        {
+            "name": "地区2",      //名称
+            "code": 2    //编码
+        },
+        {
+            "name": "地区3",      //名称
+            "code": 3     //编码
+        },
+        {
+            "name": "地区4",      //名称
+            "code": 4     //编码
+        },
+        {
+            "name": "地区5",      //名称
+            "code": 5     //编码
+        }
+    ]
+}
+

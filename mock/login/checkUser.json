@@ -1,0 +1,12 @@
+{
+    "error": {
+        "returnCode": "0",
+        "returnMessage": "ok",
+        "returnUserMessage": "成功", //123123
+    },
+    "data": {
+        "userId": "b18e5d98-41bf-44a2-b134-157614c3b19a",
+        "username": "zhangsan",
+        "realName": "张三"
+    }
+}

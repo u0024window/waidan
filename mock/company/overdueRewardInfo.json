@@ -1,0 +1,8 @@
+{
+    "error": {
+       "returnCode": "0",
+       "returnMessage": "ok",
+       "returnUserMessage": "成功"
+    },
+    "data": '[{"start":"1","rewardRate":"5","end":"10"}]'
+}

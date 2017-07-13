@@ -1,0 +1,43 @@
+<%-contentFor('main') %>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-CN" lang="zh-CN">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta name="generator" content="gvim" />
+<meta name="author" content="" />
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+<title>异常</title>
+{{ for (var css in htmlWebpackPlugin.files.css) { }}
+<link href="{{= htmlWebpackPlugin.files.css[css] }}" rel="stylesheet">
+{{ } }}
+<style>
+.main-wrap {
+    padding: 20px;
+    padding-left: 50px;
+}
+.exception-info-title {
+    margin-top: 20px;
+}
+.exception-info {
+    margin-top: 10px;
+}
+</style>
+</head>
+<body>
+<div class="default-common-head">
+    <div class="bg"></div>
+    <div class="logo">服务异常<span class="user"></span></div>
+</div>
+<div class="main-wrap">
+    <div>请联系开发人员!</div>
+    <div class="exception-info-title">异常信息:</div>
+    <div class="exception-info"><%-output%></div>
+</div>
+
+{{ for (var chunk in htmlWebpackPlugin.files.chunks) { }}
+<script src="{{= htmlWebpackPlugin.files.chunks[chunk].entry }}"></script>
+{{ } }} 
+</body>
+</html>

@@ -1,0 +1,11 @@
+{
+    "error": {
+       "returnCode": 0,
+       "returnMessage": "ok",
+       "returnUserMessage": "成功"
+    },
+    "data": {
+        "governmentTax" : 8.33,
+        "platformTax" : 10.67
+    }
+}

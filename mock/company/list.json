@@ -1,0 +1,39 @@
+{
+    "error": {
+        "returnCode": "0",
+        "returnMessage": "ok",
+        "returnUserMessage": "成功"
+    },
+    "data": {
+        "list": [
+            {
+                "enterpriseId": "123",           //公司id
+                "enterpriseName": "人人行1",    //公司名称
+                "debtTotalNum": 100,          //委托案件总量
+                "debtCurrentNum": 20,         //当前委托案件量
+                "debtTotalAmount": 110000,    //委托案件总额, 单位分
+                "debtCurrentAmount": 30000,     //当前委托案件金额，单位分
+                "debtLastCreateDate": 1410000000000,   //最近委托案件时间，时间戳、毫秒
+                "debtLastUpdateDate": 1410000000000    //最近案件更新时间，时间戳、毫秒
+            }, {
+                "enterpriseId": "123",           //公司id
+                "enterpriseName": "人人行2",    //公司名称
+                "debtTotalNum": 100,          //委托案件总量
+                "debtCurrentNum": 20,         //当前委托案件量
+                "debtTotalAmount": 110000,    //委托案件总额, 单位分
+                "debtCurrentAmount": 30000,     //当前委托案件金额，单位分
+                "debtLastCreateDate": 1410000000000,   //最近委托案件时间，时间戳、毫秒
+                "debtLastUpdateDate": 1410000000000    //最近案件更新时间，时间戳、毫秒
+            }, {
+                "enterpriseId": "123",           //公司id
+                "enterpriseName": "人人行3",    //公司名称
+                "debtTotalNum": 100,          //委托案件总量
+                "debtCurrentNum": 20,         //当前委托案件量
+                "debtTotalAmount": 110000,    //委托案件总额, 单位分
+                "debtCurrentAmount": 30000,     //当前委托案件金额，单位分
+                "debtLastCreateDate": 1410000000000,   //最近委托案件时间，时间戳、毫秒
+                "debtLastUpdateDate": 1410000000000    //最近案件更新时间，时间戳、毫秒
+            }
+        ]
+    }
+}
